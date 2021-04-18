@@ -178,6 +178,7 @@ section img {
   background: black;
 }
 .bottomSection h2 {
+  text-align: center;
   margin-bottom: 3rem;
 }
 .bottomSection ul {
