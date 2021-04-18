@@ -212,7 +212,10 @@ li div {
 .mail-start-bottom p {
   font-size: 1rem;
 }
-
+body div:nth-child(3) {
+  background: #000;
+  margin-top: 0;
+}
 /* .
 .
 .
