@@ -1,0 +1,236 @@
+:root {
+  --primary-color: #e50914;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smooting: antialiased;
+  background: #000;
+  color: #999;
+}
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+p {
+  margin: 0.5rem 0;
+}
+img {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.showcase {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("/img/netflix_background2.jpg") no-repeat center center/cover;
+}
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* Upper part of the HEADER */
+.showcase-top {
+  position: relative;
+  height: 90px;
+}
+.showcase-top img {
+  width: 160px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.showcase-top a {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+.btn-rounded {
+  display: inline-block;
+  padding: 0.5rem 1.3rem;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5px;
+  background: var(--primary-color);
+  text-align: center;
+}
+/* Main Content with H1 Heading and EMAIN input */
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.showcase-content h1 {
+  font-size: 3.2rem;
+  max-width: 60%;
+  text-align: center;
+}
+.showcase-content p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.showcase-content p:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.showcase-content p:nth-child(3) {
+  font-size: 1rem;
+}
+.mailStart {
+  margin-top: 1rem;
+  display: flex;
+}
+.mailStart input {
+  width: 25rem;
+  height: 3.2rem;
+  padding-left: 1rem;
+}
+.mailStart a {
+  padding: 1rem 1rem;
+  background: var(--primary-color);
+}
+/* Move Get Started BTN under the INPUT Text on mobile*/
+@media only screen and (max-width: 550px) {
+  .mailStart {
+    flex-direction: column;
+  }
+  .mailStart {
+    align-self: center;
+  }
+}
+/* Main Content IMG + Text */
+main {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+}
+.section-nm {
+  height: 45vh;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main h2 {
+  font-size: 3rem;
+}
+main p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+section img {
+  max-width: 400px;
+  height: 70%;
+}
+@media only screen and (max-width: 930px) {
+  main section {
+    flex-direction: column;
+  }
+  main h2 {
+    font-size: 1.7rem;
+  }
+  main p {
+    font-size: 1rem;
+  }
+  section div {
+    padding: 0;
+  }
+}
+/* Questions part */
+.bottomSection {
+  width: 100%;
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.bottomSection h2 {
+  margin-bottom: 3rem;
+}
+.bottomSection ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bottomSection li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  margin: 0.1rem 0;
+}
+li div {
+  width: 100%;
+  background: #666;
+  padding: 1rem;
+}
+.question {
+  background: #666;
+  height: 3rem;
+}
+.question h3 {
+  font-size: 2rem;
+}
+.mail-start-bottom p {
+  font-size: 1rem;
+}
+body div:nth-child(3) {
+  background: #000;
+  margin-top: 0;
+}
+
+/* .
+.
+.
+.
+.
+.
+.
+.
+.
+.
+. */
+footer {
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+.lists {
+  padding: 10%;
+  height: 35vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
